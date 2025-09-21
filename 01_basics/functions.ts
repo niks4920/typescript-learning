@@ -10,7 +10,7 @@ function getUpper(value: string) {
 function signUpUser(username: string, password: string, isPaid: boolean) {
 
 }
-
+// default value false is provided in isPaid
 let loginUser = (name: string, email: string, isPaid: boolean = false) => {}
 
 function multipleByFive (num: number): number {
@@ -37,6 +37,24 @@ let result = multipleByFive(5)
 
 const getHello = (s: string): string => { 
     return ""
+}
+
+
+const heros = ["thor","spiderman","ironman"]
+//const heros = [1,2,3]
+
+heros.map((hero): string => {
+    return `Hero is ${hero}`
+})
+
+// function with no return then mention return as void
+function consoleError(errmsg: string): void {
+    console.log(errmsg); 
+}
+
+// function never returns a value (func throws an exception or terminates the execution)
+function handleError(errmsg: string): never {
+    throw new Error(errmsg) 
 }
 
 export{}
